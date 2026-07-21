@@ -89,6 +89,31 @@ export default {
           '70%': { transform: 'scale(0.9)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        'slide-in-right': {
+          '0%': { opacity: '0', transform: 'translateX(40px) scale(0.97)' },
+          '100%': { opacity: '1', transform: 'translateX(0) scale(1)' },
+        },
+        'slide-out-left': {
+          '0%': { opacity: '1', transform: 'translateX(0) scale(1)' },
+          '100%': { opacity: '0', transform: 'translateX(-40px) scale(0.97)' },
+        },
+        'slide-in-left': {
+          '0%': { opacity: '0', transform: 'translateX(-40px) scale(0.97)' },
+          '100%': { opacity: '1', transform: 'translateX(0) scale(1)' },
+        },
+        'slide-out-right': {
+          '0%': { opacity: '1', transform: 'translateX(0) scale(1)' },
+          '100%': { opacity: '0', transform: 'translateX(40px) scale(0.97)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': { boxShadow: '0 0 20px rgba(245, 158, 11, 0.15)' },
+          '50%': { boxShadow: '0 0 40px rgba(245, 158, 11, 0.3)' },
+        },
+        'confetti-drop': {
+          '0%': { opacity: '0', transform: 'translateY(-20px) scale(0.5)' },
+          '50%': { opacity: '1', transform: 'translateY(5px) scale(1.1)' },
+          '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+        },
       },
       animation: {
         'fade-up': 'fade-up 0.7s ease-out forwards',
@@ -106,6 +131,12 @@ export default {
         'scan-line': 'scan-line 4s ease-in-out infinite',
         'slide-down': 'slide-down 0.3s ease-out forwards',
         'bounce-in': 'bounce-in 0.6s ease-out forwards',
+        'slide-in-right': 'slide-in-right 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-out-left': 'slide-out-left 0.4s cubic-bezier(0.7, 0, 0.84, 0) forwards',
+        'slide-in-left': 'slide-in-left 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-out-right': 'slide-out-right 0.4s cubic-bezier(0.7, 0, 0.84, 0) forwards',
+        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+        'confetti-drop': 'confetti-drop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
       },
     },
   },

@@ -4,14 +4,13 @@ import { useActiveSection } from '../hooks/useActiveSection';
 
 const links = [
   { label: 'Características', href: '#features' },
-  { label: 'Módulos', href: '#modules' },
-  { label: 'Tecnología', href: '#tech' },
-  { label: 'Seguridad', href: '#security' },
+  { label: 'Flujo de trabajo', href: '#workflow' },
   { label: 'Testimonios', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Contacto', href: '#contacto' },
 ];
 
-const sectionIds = ['top', 'features', 'modules', 'tech', 'security', 'testimonials', 'faq'];
+const sectionIds = ['top', 'features', 'workflow', 'testimonials', 'faq', 'contacto'];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

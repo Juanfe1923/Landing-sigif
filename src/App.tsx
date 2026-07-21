@@ -1,11 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
 import Features from './components/Features';
 import Workflow from './components/Workflow';
-import Modules from './components/Modules';
-import Tech from './components/Tech';
-import Security from './components/Security';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
@@ -26,17 +22,13 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Stats />
         <Features />
         <Workflow />
-        <Modules />
-        <Tech />
-        <Security />
         <Testimonials />
         <FAQ />
-        <CTA onToast={showToast} />
       </main>
       <Footer />
+      <CTA onToast={showToast} />
       <ScrollToTop />
 
       <div className="fixed bottom-6 left-6 z-[70] flex flex-col gap-3">
