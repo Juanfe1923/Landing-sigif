@@ -7,7 +7,6 @@ const links = [
   { label: 'Flujo de trabajo', href: '#workflow' },
   { label: 'Testimonios', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Contacto', href: '#contacto' },
 ];
 
 const sectionIds = ['top', 'features', 'workflow', 'testimonials', 'faq', 'contacto'];
